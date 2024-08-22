@@ -1,38 +1,80 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4 {
+  font-family: 'Inter', sans-serif;
+}
+
+p, li {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-weight: 600;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-primary {
+  background-color: #0f172a;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-secondary {
+  background-color: #1e293b;
+}
+
+.text-textLight {
+  color: #f1f5f9;
+}
+
+.text-textDark {
+  color: #94a3b8;
+}
+
+.text-accent {
+  color: #3b82f6;
+}
+
+.text-accent-dark {
+  color: #2563eb;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--text-accent-dark);
+}
+
+button:hover, .hover\:bg-accent-dark:hover {
+  background-color: #2563eb;
 }
